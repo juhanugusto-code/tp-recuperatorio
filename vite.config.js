@@ -5,5 +5,5 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   // Necesario para que funcione en GitHub Pages dentro de /mi-sitio-tp/
-  base: '/mi-sitio-tp/',
+  base: '/tp-recuperatorio/',
 })
