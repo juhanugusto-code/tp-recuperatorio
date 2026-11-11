@@ -1,7 +1,5 @@
 import './index.css'
 import Contacto from './pages/Contacto'
-import DatosLocales from './pages/DatosLocales'
-import Inicio from './pages/Inicio'
 
 function App() {
   return (
@@ -13,8 +11,6 @@ function App() {
 
       <main className="contenedor">
         <Contacto />
-        <DatosLocales />
-        <Inicio />
       </main>
 
       <footer className="footer">
