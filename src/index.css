@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f2f5f9;
+  color: #24303f;
+  line-height: 1.5;
+}
+
+/* ---------- Encabezado ---------- */
+.header {
+  background: #1e3a5f;
+  color: #fff;
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.header h1 {
+  margin: 0 0 6px;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
+
+.header p {
+  margin: 0;
+  opacity: 0.85;
+  font-size: 15px;
+}
+
+/* ---------- Contenedor general ---------- */
+.contenedor {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #1e3a5f;
+  margin: 0 0 6px;
+}
+
+h3 {
+  font-size: 17px;
+  margin: 12px 12px 6px;
+  color: #1e3a5f;
+}
+
+.ayuda {
+  margin: 0 0 18px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* ---------- Contacto: formulario + mapa ---------- */
+.contacto {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.columna {
+  flex: 1 1 380px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(30, 58, 95, 0.08);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #1e3a5f;
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.12);
+}
+
+.formulario button {
+  margin-top: 8px;
+  padding: 12px;
+  background: #1e3a5f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.formulario button:hover {
+  background: #2d5b90;
+}
+
+.formulario button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.mensaje-ok,
+.mensaje-error {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mensaje-ok {
+  color: #15803d;
+}
+
+.mensaje-error {
+  color: #b91c1c;
+}
+
+.mapa {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* ---------- Secciones con tarjetas ---------- */
+.seccion {
+  margin-bottom: 40px;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(30, 58, 95, 0.08);
+  padding-bottom: 12px;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta p {
+  margin: 0 12px;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #1e3a5f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 700px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .contacto {
+    flex-direction: column;
+  }
+
+  .mapa {
+    height: 300px;
+  }
+}
